@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Fecha y hora (SSI)</title>
+  <meta http-equiv="refresh" content="1">
+</head>
+<body>
+  <h1>Fecha y hora con SSI (servidor)</h1>
+  <!--#config timefmt="%d/%m/%Y %H:%M:%S" -->
+  <p><!--#echo var="DATE_LOCAL" --></p>
+</body>
+</html>
