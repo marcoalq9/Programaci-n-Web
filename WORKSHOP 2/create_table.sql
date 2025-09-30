@@ -1,0 +1,12 @@
+-- Ejecuta este script en phpMyAdmin o MySQL
+CREATE DATABASE IF NOT EXISTS workshop2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE workshop2;
+
+CREATE TABLE IF NOT EXISTS contactos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre   VARCHAR(100) NOT NULL,
+  apellido VARCHAR(100) NOT NULL,
+  correo   VARCHAR(150) NOT NULL UNIQUE,
+  telefono VARCHAR(30)  NOT NULL,
+  creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
